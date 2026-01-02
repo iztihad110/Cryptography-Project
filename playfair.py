@@ -84,8 +84,18 @@ def playfair_cipher(operation, key, text):
 
     text = text.lower()
     text = re.sub(r'[^a-z]', '', text)  
-    text = text.replace('j', 'i')
     key = re.sub(r'[^a-z]', '', key)
+
+    i = 0
+
+    for ch in key:
+        if(ch == 'i'):
+            i = 1
+            break
+    if(i == 1):
+        text = text.replace('j', 'i')
+    else:
+        text = text.replace('i', 'j')
     print(text)
     
     key_matrix = []

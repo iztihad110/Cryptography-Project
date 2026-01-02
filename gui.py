@@ -201,7 +201,7 @@ ttk.Button(root, text="Run", command=run_cipher).pack(pady=10)
 
 ttk.Label(root, text="Output").pack()
 output_text = tk.Text(root, height=5, width=100)
-output_text.pack(pady = (0, 48))
+output_text.pack(pady = (0, 20))
 
 ttk.Label(
     root,
@@ -212,14 +212,14 @@ ttk.Label(
 
 # ---------- Plaintext ----------
 ttk.Label(root, text="Plaintext:").pack()
-plaintext_entry = tk.Text(root, height=5, width=100)
+plaintext_entry = tk.Text(root, height=4, width=100)
 plaintext_entry.pack()
 
 
 
 # ---------- Ciphertext ----------
 ttk.Label(root, text="Ciphertext:").pack()
-ciphertext_entry = tk.Text(root, height=5, width=100)
+ciphertext_entry = tk.Text(root, height=4, width=100)
 ciphertext_entry.pack()
 
 # ---------- Button ----------
